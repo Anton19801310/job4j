@@ -57,8 +57,9 @@ public class Triangle{
 	 * @return
 	 */
 	private boolean exist(double ab, double ac, double bc){
-
-		return false;
+	    if(this.area() <= 0) {
+        }
+        return false;
 	}
 
 }
