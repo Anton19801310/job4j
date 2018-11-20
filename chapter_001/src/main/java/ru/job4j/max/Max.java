@@ -20,12 +20,12 @@ public class Max {
     /**
      * Method max.
      * @param first, second, third.
-     * @return temp2.
+     * @return temp1.
      */
     public int max(int first, int second, int third) {
         int temp = this.max(first, second);
-        int temp1 = this.max(second, third);
-        int temp2 = this.max(first, third);
-        return temp2;
+        int temp1 = this.max(temp, third);
+
+        return temp1;
     }
 }
