@@ -24,4 +24,15 @@ public class FactorialTest {
         double expected = 120;
         assertThat(result, is(expected));
     }
+
+    @Test
+    public void whenEvenNumberFactorialZeroThenOne() {
+        Factorial fact = new Factorial();
+        int result = fact.calc(0);
+        double expected = 1;
+        assertThat(result, is(expected));
+    }
+
 }
+
+
