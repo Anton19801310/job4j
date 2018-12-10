@@ -21,7 +21,7 @@ public class FactorialTest {
     public void whenEvenNumberFactorialFiveThenOneHundredTwenty () {
         Factorial fact = new Factorial();
         int result = fact.calc(5);
-        double expected = 120;
+        int expected = 120;
         assertThat(result, is(expected));
     }
 
@@ -29,7 +29,7 @@ public class FactorialTest {
     public void whenEvenNumberFactorialZeroThenOne() {
         Factorial fact = new Factorial();
         int result = fact.calc(0);
-        double expected = 1;
+        int expected = 1;
         assertThat(result, is(expected));
     }
 

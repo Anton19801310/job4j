@@ -15,9 +15,9 @@ public class Factorial {
      * @return факториал числа n.
      */
     public int calc(int n) {
-        int result = 0;
-        for (int a = 1; a <= n ; a++) {
-            result = a * (a + 1);
+        int result = 1;
+        for (int a = 1; a <= n ; a ++) {
+            result = result * a;
             }
         return result;
         }
