@@ -71,24 +71,21 @@ public class Logic {
         boolean result = false;
         int a =0;
         int b = 0;
-        for (int i = 0; i < table.length - 1; i ++){
-            for (int j = 0; j < table.length -1; j ++)
-                if (table[i][j] == table[i][i + 1] ||
-                    table[j][i] == table[j][j + 1]){
-                if (table[i][j] == 1){
-                    a ++;
+        for (int i = 0; i < table.length; i ++) {
+            for (int j = 0; j < table.length; j ++) {
+                if (table[i][j] == 1) {
+                    a++;
                 }
-                if (table[j][i] == 1){
-                    b ++;
+                if (table[j][i] == 1) {
+                    b++;
                 }
-                if ((table[i][j] == table.length -1) ||
-                        (table[j][i] == table.length -1)){
-                    break;
-                }
-
+            }
+            if ((a == table.length) || (b == table.length)){
                 result = true;
+                break;
             }
         }
+
         return result;
     }
 
