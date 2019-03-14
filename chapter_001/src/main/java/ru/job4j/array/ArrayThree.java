@@ -12,10 +12,8 @@ import java.util.Arrays;
 
 public class ArrayThree {
     public int[] mergeArrays(int[] a, int[] b) {
-
         int[] result = new int[a.length + b.length];
                 int i = 0, j = 0, k = 0;
-
         while (i < a.length && j < b.length) {
             if (a[i] < b[j]) {
                 result[k] = a[i];
@@ -26,21 +24,16 @@ public class ArrayThree {
             }
             k++;
         }
-
         while (i < a.length){
             result[k] = a[i];
             i++;
             k++;
         }
-
         while (j < b.length){
             result[k] = b[j];
             j++;
             k++;
         }
-
         return result;
     }
-
-
 }
