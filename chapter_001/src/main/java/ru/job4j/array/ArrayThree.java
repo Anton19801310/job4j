@@ -6,7 +6,7 @@ import java.util.Arrays;
 * Package for arrayThree task.
 *
 * @author Anton Lyalin 
-* @version $Id$45
+* @version $Id$4
 * @since 0.1
 */
 
