@@ -18,13 +18,13 @@ import java.util.Map;
 public class Unique {
     public boolean unique(int[] array1, int[] array2) {
         boolean rs = true;
-        Map<int[], Integer> map1 = new HashMap();
+        Map<Integer, Integer> map1 = new HashMap();
         for (int i = 0; i < array1.length; i++) {
-            map1.put(array1, i);
+            map1.put(array1[i], i);
         }
-        Map<int[], Integer> map2 = new HashMap();
+        Map<Integer, Integer> map2 = new HashMap();
         for (int i = 0; i < array2.length; i++) {
-            map2.put(array1, i);
+            map2.put(array2[i], i);
         }
         if (!map1.equals(map2)) {
             rs = false;
